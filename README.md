@@ -1,4 +1,4 @@
-# 2025年最好的VPN | 3月17日18.4M/S|免费SSR/V2ray/Shadowrocket/Clash订阅节点地址  更新时间 2025-03-17 14:02:41
+# 2025年最好的VPN | 3月17日18.1M/S|免费V2ray/SSR/Clash/Shadowrocket订阅节点地址  更新时间 2025-03-17 14:07:59
 所有免费clash节点都爬取自网络，请勿用于非法用途 。节点地址：<a href="https://bestvpn2025.github.io" target="_blank">点击跳转</a>
 
 ## clash使用教程：
