@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html xml:lang="zh-CN" lang="zh-CN">
+
+<head>
+        <link rel="canonical" href="https://bestvpn2025.github.io/news/article-89722.htm" />
+    <meta charset="utf-8">
+    <!-- Always force latest IE rendering engine -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>python3操作hdfs库中报错问题总结</title>
+        <meta name="description" content="报错信息： hdfs.util.HdfsError: Permission denied: user=dr.who, access=WRITE, inode="/user/hadoop/output"" />
+        <link rel="icon" href="/assets/website/img/winxraynode/favicon.ico" type="image/x-icon"/>
+
+    <meta name="author" content="2025年最好的VPN 推荐免费VPN节点订阅中文网">
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://bestvpn2025.github.io/news/article-89722.htm" />
+    <meta property="og:site_name" content="2025年最好的VPN 推荐免费VPN节点订阅中文网" />
+    <meta property="og:title" content="python3操作hdfs库中报错问题总结" />
+    <meta property="og:image" content="https://bestvpn2025.github.io/uploads/20240721/2f2158d04b310f6c891df1ea81b93b64.webp" />
+        <meta property="og:release_date" content="2025-04-06T10:08:15" />
+    <meta property="og:updated_time" content="2025-04-06T10:08:15" />
+        <meta property="og:description" content="报错信息： hdfs.util.HdfsError: Permission denied: user=dr.who, access=WRITE, inode="/user/hadoop/output"" />
+        
+    <meta name="applicable-device" content="pc,mobile" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="robots" content="max-image-preview:large" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="python3操作hdfs库中报错问题总结">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="dns-prefetch" href="https:/www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googleadservices.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+    <link rel="dns-prefetch" href="https://cm.g.doubleclick.net">
+    
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="/assets/website/css/winxraynode/bootstrap.min.css">
+    <!-- FONT-AWESOME -->
+    <link rel="stylesheet" href="/assets/website/css/winxraynode/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- OWL CAROUSEL -->
+    <link href="/assets/website/css/winxraynode/owl.carousel.min.css" rel="stylesheet">
+    <link href="/assets/website/css/winxraynode/owl.theme.default.min.css" rel="stylesheet">
+    <!-- LIGHTBOX -->
+    <link rel=" stylesheet" href="/assets/website/css/winxraynode/lightbox.css">
+    <!--Style CSS file-->
+    <link rel=" stylesheet" href="/assets/website/css/winxraynode/style.css">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1V97H1CF62"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1V97H1CF62');
+</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3332997411212854"
+     crossorigin="anonymous"></script>
+</head>
+
+<body data-page="detail">
+        <!-- ====== Preloader ======  -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    <!-- ======End Preloader ======  -->
+    <!-- ======START NAVGITION ======  -->
+    <!-- Menu -->
+    <div class="main-menu">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <!-- logo -->
+                <a class="navbar-brand" href="/">
+                                <span>
+                    2025年最好的VPN                </span>
+                                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText">
+                    <span class="icon-bar"><i class="fa fa-bars fa-2x"></i></span>
+                </button>
+                <!--End of Resposive Toggle icon-->
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <!--Main menu navigation list-->
+                    <ul class="navbar-nav ml-auto">
+                                                <li class="nav-item">
+                            <a class="nav-link" href="/">首页</a>
+                        </li>
+                                                <li class="nav-item">
+                            <a class="nav-link" href="/free-nodes/">免费节点</a>
+                        </li>
+                                                <li class="nav-item">
+                            <a class="nav-link" href="/paid-subscribe/">推荐机场</a>
+                        </li>
+                                                <li class="nav-item">
+                            <a class="nav-link" href="/news/">新闻资讯</a>
+                        </li>
+                                                <li class="nav-item">
+                            <a class="nav-link" href="/client.htm">客户端</a>
+                        </li>
+                                            </ul>
+                    <!--End of Main menu navigation list-->
+                </div>
+                <!--End of resposive collapse class-->
+            </nav>
+        </div>
+    </div>
+    <!-- Menu -->
+    <!-- ====== END NAVGITION ======  -->
+    <!-- =======START HEADER=========== -->
+    <header class="home category" id="home" data-scroll-index="0">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 home-content mt-md-5 mt-sm-5">
+                    <h1 class="heading-primary mb-3 title">
+                        python3操作hdfs库中报错问题总结                    </h1>
+                    <p class="mb-5">
+                        <a href="/">首页</a> / <a href="/news/">新闻资讯</a> / <span>正文</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ====== END HEADER ======  -->
+    <!-- Scroll to Top -->
+    <div id="scroll-to-top"><i class="fa fa-arrow-up fa-fw"></i></div>
+    <!-- ====== START ABOUT ======  -->
+    <section class="about padding" id="about" data-scroll-index="1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                                    <input type="hidden" id="share-website-info" data-name="Clash Node官网订阅站" data-url="https://clashnode.github.io">
+                  				  				  				<div id="content_views" class="htmledit_views"> <p>报错信息：</p> <pre><code class="language-bash">hdfs.util.HdfsError: Permission denied: user=dr.who, access=WRITE, inode="/user/hadoop/output":hadoop:supergroup:drwxr-xr-x</code></pre> <p>解决方法：</p> <p>因为权限的问题，需要修改配置文件和赋予权限：<br /> 1.赋予权限</p> <pre><code class="language-bash">hadoop fs -chmod 777 /user/hadoop</code></pre> <p>2.修改配置文件</p> <p>hdfs-site.xml</p> <pre><code class="language-bash">&lt;property&gt; &lt;name&gt;dfs.permissions.enabled&lt;/name&gt; &lt;value&gt;false&lt;/value&gt; &lt;/property&gt;</code></pre> <p>报错信息：</p> <pre><code class="language-bash">hdfs.util.HdfsError: Cannot create file/user/hadoop/output/result.txt. Name node is in safe mode.</code></pre> <p>解决方法：</p> <p>因为Name node处于安全模式，需要关闭安全模式</p> <pre><code class="language-bash">hadoop dfsadmin -safemode leave</code></pre> <p>报错信息：</p> <pre><code>requests.exceptions.ConnectionError: HTTPConnectionPool(host='ubuntu', port=50075): Max retries exceeded with url: /webhdfs/v1/user/hadoop/input/file1.txt?op=OPEN&amp;namenoderpcaddress=localhost:9000&amp;length=20&amp;offset=0 (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x11c44f670&gt;: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known')) </code></pre> <p>解决方法：</p> <pre><code>问题原因 :出现host='16a187bf3b55', port=50075 表示客户端已经连接成功,但是无法解析域名  通过在python程序运行的机器上修改hosts文件  添加对应连接的ip 以及相关联的别名  如  119.10.1.15&nbsp; &nbsp; 16a187bf3b55&nbsp;&nbsp;namenode </code></pre> <p>&nbsp;</p> </p></div> 			                <div class="clearfix"></div>
+                <div class="col-md-12 mt-5">
+                                        <p>上一个：<a href="/news/article-88979.htm">动物疫苗的作用是什么呢英文 动物疫苗的作用是什么呢英文翻译</a></p>
+                                        <p>下一个：<a href="/news/article-89723.htm">成都宠物领养中心官网收容中心地址在哪里（成都宠物收养所）</a></p>
+                                    </div>
+                                </div>
+                <div class="col-md-3">
+                    <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">热门文章</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2"><a href="/news/article-84680.htm" title="长沙宠物狗领养中心地址 长沙宠物狗领养中心地址在哪里">长沙宠物狗领养中心地址 长沙宠物狗领养中心地址在哪里</a></li>
+                        <li class="py-2"><a href="/news/article-81165.htm" title="python 数据加载工作">python 数据加载工作</a></li>
+                        <li class="py-2"><a href="/news/article-90479.htm" title="Pycharm中pyenv和virtualenv使用详解">Pycharm中pyenv和virtualenv使用详解</a></li>
+                        <li class="py-2"><a href="/news/article-79774.htm" title="Spring Boot: 定时任务注解@Scheduled以及动态任务SchedulingConfigurer 实践">Spring Boot: 定时任务注解@Scheduled以及动态任务SchedulingConfigurer 实践</a></li>
+                        <li class="py-2"><a href="/news/article-85387.htm" title="小猫养成大猫要多久（小猫养成大猫要多久才能长大）">小猫养成大猫要多久（小猫养成大猫要多久才能长大）</a></li>
+                        <li class="py-2"><a href="/news/article-76346.htm" title="json字符串转java实体类及属性对应中的猫腻详解">json字符串转java实体类及属性对应中的猫腻详解</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-4-1-node-share-links.htm" title="2025年最好的VPN | 4月1日19.8M/S|免费Clash/V2ray/Shadowrocket/SSR订阅节点地址">2025年最好的VPN | 4月1日19.8M/S|免费Clash/V2ray/Shadowrocket/SSR订阅节点地址</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-4-4-clash-v2ray-ss-ssr.htm" title="2025年最好的VPN | 4月4日19.6M/S|免费Shadowrocket/V2ray/SSR/Clash订阅节点地址">2025年最好的VPN | 4月4日19.6M/S|免费Shadowrocket/V2ray/SSR/Clash订阅节点地址</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-3-25-free-v2ray.htm" title="2025年最好的VPN | 3月25日20M/S|免费SSR/Clash/V2ray/Shadowrocket订阅节点地址">2025年最好的VPN | 3月25日20M/S|免费SSR/Clash/V2ray/Shadowrocket订阅节点地址</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-4-8-free-high-speed-nodes.htm" title="2025年最好的VPN | 4月8日19.7M/S|免费Clash/Shadowrocket/SSR/V2ray订阅节点地址">2025年最好的VPN | 4月8日19.7M/S|免费Clash/Shadowrocket/SSR/V2ray订阅节点地址</a></li>
+                    </ul>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">归纳</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">24</span> <a href="/date/2025-04/" title="2025-04 归档">2025-04</a></h4>
+            </li>
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">45</span> <a href="/date/2025-03/" title="2025-03 归档">2025-03</a></h4>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ====== END ABOUT======  -->
+        <!-- ====== START FOOTER BOTTOM======  -->
+    <section class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="offset-md-3 col-md-6 offset-md-3">
+                    <!-- START RIGHTS -->
+                    <div class="copyright">
+                                            <p>
+                                                <a href="/">首页</a> |
+                                                <a href="/free-nodes/">免费节点</a> |
+                                                <a href="/paid-subscribe/">推荐机场</a> |
+                                                <a href="/news/">新闻资讯</a> |
+                                                <a href="/client.htm">客户端</a> |
+                                                <a href="/about-us.htm">关于我们</a> |
+                        <a href="/disclaimer.htm">免责申明</a> |
+                        <a href="/privacy.htm">隐私申明</a> |
+                        <a href="/sitemap.xml">网站地图</a>
+                    </p>
+                        <p>2025年最好的VPN 推荐免费VPN节点订阅中文网 版权所有</p>
+                        <p>Powered by WordPress</p>
+                    </div>
+                    <!-- END RIGHTS -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ====== END FOOTER BOTTOM======  -->
+    <!-- ====== JS ======  -->
+    <!--jquery-3.3.1 js-->
+    <script src="/assets/website/js/frontend/winxraynode/jquery-3.3.1.min.js"></script>
+    <!-- popper js -->
+    <script src="/assets/website/js/frontend/winxraynode/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="/assets/website/js/frontend/winxraynode/bootstrap.min.js"></script>
+    <!-- scrollIt js -->
+    <script src="/assets/website/js/frontend/winxraynode/scrollIt.min.js"></script>
+    <!-- countTo js -->
+    <script src="/assets/website/js/frontend/winxraynode/jquery.countTo.js"></script>
+    <!-- filter js -->
+    <script src="/assets/website/js/frontend/winxraynode/jquery.filterizr.min.js"></script>
+    <!-- waypoints js -->
+    <script src="/assets/website/js/frontend/winxraynode/waypoints.min.js"></script>
+    <!-- owl carousel js -->
+    <script src="/assets/website/js/frontend/winxraynode/owl.carousel.min.js"></script>
+    <!-- validator js -->
+    <script src="/assets/website/js/frontend/winxraynode/validator.js"></script>
+    <!-- coustom js -->
+    <script src="/assets/website/js/frontend/winxraynode/main.js"></script>
+    <!-- lightbox js -->
+    <script src="/assets/website/js/frontend/winxraynode/lightbox.js"></script>
+    <script src="https://www.freeclashnode.com/assets/js/frontend/invite-url.js"></script>
+    <script src="/assets/website/js/frontend/G.js"></script>
+</body>
+
+</html>
