@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html xml:lang="zh-CN" lang="zh-CN">
+
+<head>
+        <link rel="canonical" href="https://bestvpn2025.github.io/news/article-110630.htm" />
+    <meta charset="utf-8">
+    <!-- Always force latest IE rendering engine -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>安装、升级pip，但是python -m pip install &#8211;upgrade pip报错的解决办法。</title>
+        <meta name="description" content="&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;一般我们在安装或者调用pip库的时候，会告诉你pip版本较低，需要你升级，比如我的本机是如下。 &nbsp; &nbsp; &nbs" />
+        <link rel="icon" href="/assets/website/img/winxraynode/favicon.ico" type="image/x-icon"/>
+
+    <meta name="author" content="2025年最好的VPN 推荐免费VPN节点订阅中文网">
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://bestvpn2025.github.io/news/article-110630.htm" />
+    <meta property="og:site_name" content="2025年最好的VPN 推荐免费VPN节点订阅中文网" />
+    <meta property="og:title" content="安装、升级pip，但是python -m pip install &#8211;upgrade pip报错的解决办法。" />
+    <meta property="og:image" content="https://bestvpn2025.github.io/uploads/20240721/393946e17a8fda16f24e159939ea24f6.webp" />
+        <meta property="og:release_date" content="2025-05-03T10:29:10" />
+    <meta property="og:updated_time" content="2025-05-03T10:29:10" />
+        <meta property="og:description" content="&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;一般我们在安装或者调用pip库的时候，会告诉你pip版本较低，需要你升级，比如我的本机是如下。 &nbsp; &nbsp; &nbs" />
+        
+    <meta name="applicable-device" content="pc,mobile" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="robots" content="max-image-preview:large" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="安装、升级pip，但是python -m pip install &#8211;upgrade pip报错的解决办法。">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="dns-prefetch" href="https:/www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googleadservices.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+    <link rel="dns-prefetch" href="https://cm.g.doubleclick.net">
+    
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="/assets/website/css/winxraynode/bootstrap.min.css">
+    <!-- FONT-AWESOME -->
+    <link rel="stylesheet" href="/assets/website/css/winxraynode/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- OWL CAROUSEL -->
+    <link href="/assets/website/css/winxraynode/owl.carousel.min.css" rel="stylesheet">
+    <link href="/assets/website/css/winxraynode/owl.theme.default.min.css" rel="stylesheet">
+    <!-- LIGHTBOX -->
+    <link rel=" stylesheet" href="/assets/website/css/winxraynode/lightbox.css">
+    <!--Style CSS file-->
+    <link rel=" stylesheet" href="/assets/website/css/winxraynode/style.css">
+    <link rel="stylesheet" href="/assets/website/css/G.css" />
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1V97H1CF62"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1V97H1CF62');
+</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3332997411212854"
+     crossorigin="anonymous"></script>
+</head>
+
+<body data-page="detail">
+        <!-- ====== Preloader ======  -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    <!-- ======End Preloader ======  -->
+    <!-- ======START NAVGITION ======  -->
+    <!-- Menu -->
+    <div class="main-menu">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <!-- logo -->
+                <a class="navbar-brand" href="/">
+                                <span>
+                    2025年最好的VPN                </span>
+                                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText">
+                    <span class="icon-bar"><i class="fa fa-bars fa-2x"></i></span>
+                </button>
+                <!--End of Resposive Toggle icon-->
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <!--Main menu navigation list-->
+                    <ul class="navbar-nav ml-auto">
+                                                <li class="nav-item">
+                            <a class="nav-link" href="/">首页</a>
+                        </li>
+                                                <li class="nav-item">
+                            <a class="nav-link" href="/free-nodes/">免费节点</a>
+                        </li>
+                                                <li class="nav-item">
+                            <a class="nav-link" href="/paid-subscribe/">推荐机场</a>
+                        </li>
+                                                <li class="nav-item">
+                            <a class="nav-link" href="/news/">新闻资讯</a>
+                        </li>
+                                                <li class="nav-item">
+                            <a class="nav-link" href="/client.htm">客户端</a>
+                        </li>
+                                            </ul>
+                    <!--End of Main menu navigation list-->
+                </div>
+                <!--End of resposive collapse class-->
+            </nav>
+        </div>
+    </div>
+    <!-- Menu -->
+    <!-- ====== END NAVGITION ======  -->
+    <!-- =======START HEADER=========== -->
+    <header class="home category" id="home" data-scroll-index="0">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 home-content mt-md-5 mt-sm-5">
+                    <h1 class="heading-primary mb-3 title">
+                        安装、升级pip，但是python -m pip install &#8211;upgrade pip报错的解决办法。                    </h1>
+                    <p class="mb-5">
+                        <a href="/">首页</a> / <a href="/news/">新闻资讯</a> / <span>正文</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ====== END HEADER ======  -->
+    <!-- Scroll to Top -->
+    <div id="scroll-to-top"><i class="fa fa-arrow-up fa-fw"></i></div>
+    <!-- ====== START ABOUT ======  -->
+    <section class="about padding" id="about" data-scroll-index="1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                                    <input type="hidden" id="share-website-info" data-name="Clash Node官网订阅站" data-url="https://clashnode.github.io">
+                <div class="xcblog-blog-detail xcblog-blog-detail-defined">
+                      				  				  				<div id="content_views" class="htmledit_views"> <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;一般我们在安装或者调用pip库的时候，会告诉你pip版本较低，需要你升级，比如我的本机是如下。</p> <p>&nbsp; &nbsp; &nbsp;一、&nbsp; &nbsp; 我是直接cd到我pip目录文件下查看版本：</p> <pre class="has"><code class="language-python">E:\Program Files (x86)\python\Scripts&gt;pip show pip Name: pip Version: 10.0.1 Summary: The PyPA recommended tool for installing Python packages. Home-page: https://pip.pypa.io/ Author: The pip developers Author-email: python-virtualenv@groups.google.com License: MIT Location: e:\program files (x86)\python\lib\site-packages Requires: Required-by: You are using pip version 10.0.1, however version 19.0.3 is available. You should consider upgrading via the 'python -m pip install --upgrade pip' command.</code></pre> <p>&nbsp; &nbsp; &nbsp; &nbsp; 特别是Required-by:以及命令窗中黄色的字，</p> <p><img decoding="async" alt="" class="has" height="58" src="http://img.555519.xyz/uploads/20230110/e9c81219d5e3301365f199b10f110329.jpg"></p> <p>&nbsp; &nbsp; &nbsp; &nbsp; 提示我可用的有19.0.3的版本可用，说明我的pip版本太低了，需要升级。</p> <p>&nbsp; &nbsp; 二、在命令窗中我按照要求，进行升级，敲入‘<strong><span style="color:#f33b45;">python -m pip install --upgrade pip</span></strong>’，但是提示我安装失败。</p> <pre class="has"><code class="language-python">E:\Program Files (x86)\python\Scripts&gt;python -m pip install --upgrade pip Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='pypi.org', port=443): Read timed out. (read timeout=15)",)': /simple/pip/ Collecting pip   Downloading https://files.pythonhosted.org/packages/d8/f3/413bab4ff08e1fc4828dfc59996d721917df8e8583ea85385d51125dceff/pip-19.0.3-py2.py3-none-any.whl (1.4MB)     99% |███████████████████████████████▊| 1.3MB 74kB/s eta 0:00:01Exception: Traceback (most recent call last):   File "E:\Program Files (x86)\python\lib\site-packages\pip\_internal\basecommand.py", line 228, in main     status = self.run(options, args)   File "E:\Program Files (x86)\python\lib\site-packages\pip\_internal\commands\install.py", line 291, in run     resolver.resolve(requirement_set)   File "E:\Program Files (x86)\python\lib\site-packages\pip\_internal\resolve.py", line 103, in resolve     self._resolve_one(requirement_set, req)   File "E:\Program Files (x86)\python\lib\site-packages\pip\_internal\resolve.py", line 257, in _resolve_one     abstract_dist = self._get_abstract_dist_for(req_to_install)   File "E:\Program Files (x86)\python\lib\site-packages\pip\_internal\resolve.py", line 210, in _get_abstract_dist_for     self.require_hashes   File "E:\Program Files (x86)\python\lib\site-packages\pip\_internal\operations\prepare.py", line 310, in prepare_linked_requirement     progress_bar=self.progress_bar   File "E:\Program Files (x86)\python\lib\site-packages\pip\_internal\download.py", line 837, in unpack_url     progress_bar=progress_bar   File "E:\Program Files (x86)\python\lib\site-packages\pip\_internal\download.py", line 674, in unpack_http_url     progress_bar)   File "E:\Program Files (x86)\python\lib\site-packages\pip\_internal\download.py", line 898, in _download_http_url     _download_url(resp, link, content_file, hashes, progress_bar)   File "E:\Program Files (x86)\python\lib\site-packages\pip\_internal\download.py", line 618, in _download_url     hashes.check_against_chunks(downloaded_chunks)   File "E:\Program Files (x86)\python\lib\site-packages\pip\_internal\utils\hashes.py", line 48, in check_against_chunks     for chunk in chunks:   File "E:\Program Files (x86)\python\lib\site-packages\pip\_internal\download.py", line 586, in written_chunks     for chunk in chunks:   File "E:\Program Files (x86)\python\lib\site-packages\pip\_internal\utils\ui.py", line 159, in iter     for x in it:   File "E:\Program Files (x86)\python\lib\site-packages\pip\_internal\download.py", line 575, in resp_read     decode_content=False):   File "E:\Program Files (x86)\python\lib\site-packages\pip\_vendor\urllib3\response.py", line 436, in stream     data = self.read(amt=amt, decode_content=decode_content)   File "E:\Program Files (x86)\python\lib\site-packages\pip\_vendor\urllib3\response.py", line 401, in read     raise IncompleteRead(self._fp_bytes_read, self.length_remaining)   File "E:\Program Files (x86)\python\lib\contextlib.py", line 35, in __exit__     self.gen.throw(type, value, traceback)   File "E:\Program Files (x86)\python\lib\site-packages\pip\_vendor\urllib3\response.py", line 316, in _error_catcher     raise ReadTimeoutError(self._pool, None, 'Read timed out.') ReadTimeoutError: HTTPSConnectionPool(host='files.pythonhosted.org', port=443): Read timed out. You are using pip version 10.0.1, however version 19.0.3 is available. You should consider upgrading via the 'python -m pip install --upgrade pip' command.</code></pre> <p>&nbsp; &nbsp; &nbsp; 这个时候我看到，检查升级不能覆盖，这个时候可以去到你的安装目录，找到<strong><span style="color:#f33b45;">site-packages</span></strong>文件夹，把原来的<span style="color:#f33b45;"><strong>pip-10.0.1.dist-info</strong></span>这个消息目录删除，<strong><span style="color:#f33b45;">（经过询问，很多同学的安装不成功都是和这个目录有关系）</span></strong>。下图我是删除后重新升级并自动升级的目录。</p> <p style="text-align:center;"><img decoding="async" alt="" class="has" src="http://img.555519.xyz/uploads/20230110/433d6543613f2f256cbebb2fe51eda14.jpg"></p> <p>&nbsp;</p> <p>&nbsp; &nbsp;三、 再次运行<strong><span style="color:#f33b45;"><code>python -m pip install --upgrade pip</code>&nbsp;</span></strong>后升级成功，之前不能安装的包也能安装了！</p> <p>&nbsp; &nbsp; &nbsp;</p> <p style="text-align:center;"><img fetchpriority="high" decoding="async" alt="" class="has" height="112" src="http://img.555519.xyz/uploads/20230110/1fbd1942d1ced23feeddf83fb3b6c8a5.jpg"></p> <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;是不是很开心？！</p> <p>&nbsp;</p> <p><em>注：本文属于原创，本博客下所有内容，凡注明"来源：laofashi2015"的所有文字、图片和音视频资料，版权均属laofashi2015所有，任何媒体、网站或个人未经本人协议授权不得转载、链接、转贴或以其他方式复制发布/发表。已经本人协议授权的媒体、网站，在下载使用时必须注明"稿件来源：laofashi2015"，违者本人将依法追究责任。</em></p> </p></div> 			                </div>
+                <div class="clearfix"></div>
+                <div class="col-md-12 mt-5">
+                                        <p>上一个：<a href="/news/article-109794.htm">猫多久驱一次虫知乎（猫应该多久驱虫一次）</a></p>
+                                        <p>下一个：<a href="/news/article-110633.htm">猫用的驱虫药好的品牌有哪些（猫用的驱虫药什么牌子好）</a></p>
+                                    </div>
+                                </div>
+                <div class="col-md-3">
+                    <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">热门文章</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2"><a href="/news/article-91980.htm" title="1970年阴历四月二十二阳历是多少（1970年阴历四月二十四阳历是多少号）">1970年阴历四月二十二阳历是多少（1970年阴历四月二十四阳历是多少号）</a></li>
+                        <li class="py-2"><a href="/news/article-104792.htm" title="动物疫苗采购价格（动物疫苗价格查询）">动物疫苗采购价格（动物疫苗价格查询）</a></li>
+                        <li class="py-2"><a href="/news/article-101533.htm" title="Ubuntu环境Docker+K8s+Dashboard的安装配置(无坑亲测)_在线工具">Ubuntu环境Docker+K8s+Dashboard的安装配置(无坑亲测)_在线工具</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-5-6-free-subscribe-node.htm" title="2025年最好的VPN | 5月6日20M/S|免费V2ray/SSR/Clash/Shadowrocket订阅节点地址">2025年最好的VPN | 5月6日20M/S|免费V2ray/SSR/Clash/Shadowrocket订阅节点地址</a></li>
+                        <li class="py-2"><a href="/news/article-107326.htm" title="58同城宠物领养长沙（长沙同城领养猫）">58同城宠物领养长沙（长沙同城领养猫）</a></li>
+                        <li class="py-2"><a href="/news/article-96466.htm" title="宠物粮食加工厂设备生产厂家电话号码查询（宠物粮食加工厂设备生产厂家电话号码查询）">宠物粮食加工厂设备生产厂家电话号码查询（宠物粮食加工厂设备生产厂家电话号码查询）</a></li>
+                        <li class="py-2"><a href="/news/article-91985.htm" title="动物医院属于医疗机构吗为什么没人管（动物医院归哪里管）">动物医院属于医疗机构吗为什么没人管（动物医院归哪里管）</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-4-12-free-v2ray-subscribe.htm" title="2025年最好的VPN | 4月12日22.8M/S|免费V2ray/Clash/SSR/Shadowrocket订阅节点地址">2025年最好的VPN | 4月12日22.8M/S|免费V2ray/Clash/SSR/Shadowrocket订阅节点地址</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-4-6-clash-v2ray-ss-ssr.htm" title="2025年最好的VPN | 4月6日19.1M/S|免费Shadowrocket/V2ray/SSR/Clash订阅节点地址">2025年最好的VPN | 4月6日19.1M/S|免费Shadowrocket/V2ray/SSR/Clash订阅节点地址</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-5-3-free-subscribe-node.htm" title="2025年最好的VPN | 5月3日22.4M/S|免费V2ray/Shadowrocket/Clash/SSR订阅节点地址">2025年最好的VPN | 5月3日22.4M/S|免费V2ray/Shadowrocket/Clash/SSR订阅节点地址</a></li>
+                    </ul>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">归纳</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">14</span> <a href="/date/2025-05/" title="2025-05 归档">2025-05</a></h4>
+            </li>
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">89</span> <a href="/date/2025-04/" title="2025-04 归档">2025-04</a></h4>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ====== END ABOUT======  -->
+        <!-- ====== START FOOTER BOTTOM======  -->
+    <section class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="offset-md-3 col-md-6 offset-md-3">
+                    <!-- START RIGHTS -->
+                    <div class="copyright">
+                                            <p>
+                                                <a href="/">首页</a> |
+                                                <a href="/free-nodes/">免费节点</a> |
+                                                <a href="/paid-subscribe/">推荐机场</a> |
+                                                <a href="/news/">新闻资讯</a> |
+                                                <a href="/client.htm">客户端</a> |
+                                                <a href="/about-us.htm">关于我们</a> |
+                        <a href="/disclaimer.htm">免责申明</a> |
+                        <a href="/privacy.htm">隐私申明</a> |
+                        <a href="/sitemap.xml">网站地图</a>
+                    </p>
+                        <p>2025年最好的VPN 推荐免费VPN节点订阅中文网 版权所有</p>
+                        <p>Powered by WordPress</p>
+                    </div>
+                    <!-- END RIGHTS -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ====== END FOOTER BOTTOM======  -->
+    <!-- ====== JS ======  -->
+    <!--jquery-3.3.1 js-->
+    <script src="/assets/website/js/frontend/winxraynode/jquery-3.3.1.min.js"></script>
+    <!-- popper js -->
+    <script src="/assets/website/js/frontend/winxraynode/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="/assets/website/js/frontend/winxraynode/bootstrap.min.js"></script>
+    <!-- scrollIt js -->
+    <script src="/assets/website/js/frontend/winxraynode/scrollIt.min.js"></script>
+    <!-- countTo js -->
+    <script src="/assets/website/js/frontend/winxraynode/jquery.countTo.js"></script>
+    <!-- filter js -->
+    <script src="/assets/website/js/frontend/winxraynode/jquery.filterizr.min.js"></script>
+    <!-- waypoints js -->
+    <script src="/assets/website/js/frontend/winxraynode/waypoints.min.js"></script>
+    <!-- owl carousel js -->
+    <script src="/assets/website/js/frontend/winxraynode/owl.carousel.min.js"></script>
+    <!-- validator js -->
+    <script src="/assets/website/js/frontend/winxraynode/validator.js"></script>
+    <!-- coustom js -->
+    <script src="/assets/website/js/frontend/winxraynode/main.js"></script>
+    <!-- lightbox js -->
+    <script src="/assets/website/js/frontend/winxraynode/lightbox.js"></script>
+    <script src="https://www.freeclashnode.com/assets/js/frontend/invite-url.js"></script>
+    <script src="/assets/website/js/frontend/G.js"></script>
+</body>
+
+</html>
