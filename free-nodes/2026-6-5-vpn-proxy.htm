@@ -355,19 +355,29 @@ ntpdate -u ntp.aliyun.com &gt;&gt; /var/log/ntp.log 2&gt;&amp;1
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Shadowrocket 如何实现节点自动切换？</h5></div>
-    <div class="panel-body">
-        Shadowrocket 可结合延迟测速和策略组自动选择低延迟、稳定节点处理不同流量。提高网页、视频和游戏访问速度，减少掉线和卡顿，优化整体上网体验。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>如何在 Sing-box 中设置多个 outbound 实现策略路由？</h5></div>
-    <div class="panel-body">
-        在 sing-box 的配置中定义多个 outbound 对象并为 routing 模块配置 rules，将不同目的地或应用流量指向对应 outbound，从而实现分流、负载均衡或故障转移等复杂路由策略。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>SSR 协议和混淆选择如何影响稳定性？</h5></div>
     <div class="panel-body">
         根据网络封锁情况选择合适协议和混淆方式，如 tls1.2_ticket_auth 模拟 HTTPS 流量。合理组合可提升抗封锁能力和连接稳定性，确保节点长期可用，优化网络访问。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>V2RayN 订阅更新后节点重复如何清理？</h5></div>
+    <div class="panel-body">
+        V2RayN 在导入订阅时有时会产生重复节点，可以点击右键菜单选择“删除重复项”。若仍存在旧节点缓存，可清空配置文件夹内的 history.json 并重新导入订阅，保证节点列表整洁。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>PassWall2 能运行在哪些设备上？</h5></div>
+    <div class="panel-body">
+        PassWall2 是基于 OpenWRT 的插件，只要路由器支持该固件，就能安装运行。常见型号如小米路由、斐讯、软路由都可以使用，通过 Web 界面操作，适合家庭网络使用场景。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Mellow 支持哪些平台？</h5></div>
+    <div class="panel-body">
+        Mellow 是基于 Electron 的跨平台代理工具，支持 Windows、macOS 和 Linux。它通过 TUN 模式接管全局流量，并支持 Clash 规则和订阅格式，非常灵活。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Shadowrocket 如何实现节点自动切换？</h5></div>
+    <div class="panel-body">
+        Shadowrocket 可结合延迟测速和策略组自动选择低延迟、稳定节点处理不同流量。提高网页、视频和游戏访问速度，减少掉线和卡顿，优化整体上网体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>WinXray 的多节点分流如何设置？</h5></div>
@@ -380,29 +390,19 @@ ntpdate -u ntp.aliyun.com &gt;&gt; /var/log/ntp.log 2&gt;&amp;1
         节点可按延迟、地区或用途分组，结合策略组实现自动分流。快速选择最优节点，可提高网页、视频和游戏访问速度，同时优化节点管理和维护效率，提升整体网络体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Mellow 支持哪些平台？</h5></div>
-    <div class="panel-body">
-        Mellow 是基于 Electron 的跨平台代理工具，支持 Windows、macOS 和 Linux。它通过 TUN 模式接管全局流量，并支持 Clash 规则和订阅格式，非常灵活。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>Hysteria2 的 QUIC 模式相比 TCP 有哪些优势？</h5></div>
     <div class="panel-body">
         QUIC 协议基于 UDP，可减少握手延迟并在高丢包环境下保持较好体验。Hysteria2 对 QUIC 进行了优化，支持自适应拥塞控制与加密，能在移动网络中比 TCP 拥有更快的响应速度。<hr />    </div>
 </div>
 <div class="panel panel-default">
+    <div class="panel-heading"><h5>如何在 Sing-box 中设置多个 outbound 实现策略路由？</h5></div>
+    <div class="panel-body">
+        在 sing-box 的配置中定义多个 outbound 对象并为 routing 模块配置 rules，将不同目的地或应用流量指向对应 outbound，从而实现分流、负载均衡或故障转移等复杂路由策略。<hr />    </div>
+</div>
+<div class="panel panel-default">
     <div class="panel-heading"><h5>SSR 的混淆和协议设置如何选择才能绕过封锁？</h5></div>
     <div class="panel-body">
-        选择模拟 HTTPS 的混淆方式如 tls1.2_ticket_auth，并搭配 AEAD 或协议插件，可以有效隐藏流量特征，降低被封锁风险。不同网络环境需测试选择最优组合。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>V2RayN 订阅更新后节点重复如何清理？</h5></div>
-    <div class="panel-body">
-        V2RayN 在导入订阅时有时会产生重复节点，可以点击右键菜单选择“删除重复项”。若仍存在旧节点缓存，可清空配置文件夹内的 history.json 并重新导入订阅，保证节点列表整洁。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>PassWall2 能运行在哪些设备上？</h5></div>
-    <div class="panel-body">
-        PassWall2 是基于 OpenWRT 的插件，只要路由器支持该固件，就能安装运行。常见型号如小米路由、斐讯、软路由都可以使用，通过 Web 界面操作，适合家庭网络使用场景。    </div>
+        选择模拟 HTTPS 的混淆方式如 tls1.2_ticket_auth，并搭配 AEAD 或协议插件，可以有效隐藏流量特征，降低被封锁风险。不同网络环境需测试选择最优组合。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -452,16 +452,16 @@ ntpdate -u ntp.aliyun.com &gt;&gt; /var/log/ntp.log 2&gt;&amp;1
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2026-5-8-mianfei-vpn.htm" title="2025年最好的VPN | 5月8日18M/S|免费SSR节点/V2ray节点/Singbox节点/Clash节点/Trojan节点/Shadowrocket节点订阅节点地址">2025年最好的VPN | 5月8日18M/S|免费SSR节点/V2ray节点/Singbox节点/Clash节点/Trojan节点/Shadowrocket节点订阅节点地址</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-5-12-free-vpn.htm" title="2025年最好的VPN | 5月12日18.2M/S|免费SSR节点/V2ray节点/Trojan节点/Clash节点/Singbox节点/Shadowrocket节点订阅节点地址">2025年最好的VPN | 5月12日18.2M/S|免费SSR节点/V2ray节点/Trojan节点/Clash节点/Singbox节点/Shadowrocket节点订阅节点地址</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-5-25-top-vpn.htm" title="2025年最好的VPN | 5月25日20.8M/S|免费Clash节点/Singbox节点/V2ray节点/Shadowrocket节点/SSR节点/Trojan节点订阅节点地址">2025年最好的VPN | 5月25日20.8M/S|免费Clash节点/Singbox节点/V2ray节点/Shadowrocket节点/SSR节点/Trojan节点订阅节点地址</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-5-6-free-vpn-node.htm" title="2025年最好的VPN | 5月6日21.8M/S|免费Clash节点/Singbox节点/SSR节点/V2ray节点/Shadowrocket节点/Trojan节点订阅节点地址">2025年最好的VPN | 5月6日21.8M/S|免费Clash节点/Singbox节点/SSR节点/V2ray节点/Shadowrocket节点/Trojan节点订阅节点地址</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-5-18-vpn-free.htm" title="2025年最好的VPN | 5月18日22M/S|免费Shadowrocket节点/Trojan节点/Singbox节点/V2ray节点/SSR节点/Clash节点订阅节点地址">2025年最好的VPN | 5月18日22M/S|免费Shadowrocket节点/Trojan节点/Singbox节点/V2ray节点/SSR节点/Clash节点订阅节点地址</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-6-12-free-node-subscribe.htm" title="2025年最好的VPN | 6月12日19M/S|免费Shadowrocket节点/Singbox节点/Clash节点/SSR节点/Trojan节点/V2ray节点订阅节点地址">2025年最好的VPN | 6月12日19M/S|免费Shadowrocket节点/Singbox节点/Clash节点/SSR节点/Trojan节点/V2ray节点订阅节点地址</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-26-node-share.htm" title="2025年最好的VPN | 5月26日21.7M/S|免费Clash节点/SSR节点/V2ray节点/Singbox节点/Trojan节点/Shadowrocket节点订阅节点地址">2025年最好的VPN | 5月26日21.7M/S|免费Clash节点/SSR节点/V2ray节点/Singbox节点/Trojan节点/Shadowrocket节点订阅节点地址</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-6-1-vpn-free.htm" title="2025年最好的VPN | 6月1日21.6M/S|免费SSR节点/V2ray节点/Shadowrocket节点/Trojan节点/Singbox节点/Clash节点订阅节点地址">2025年最好的VPN | 6月1日21.6M/S|免费SSR节点/V2ray节点/Shadowrocket节点/Trojan节点/Singbox节点/Clash节点订阅节点地址</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/2026-5-19-top-vpn-node.htm" title="2025年最好的VPN | 5月19日22.9M/S|免费Clash节点/SSR节点/Singbox节点/V2ray节点/Shadowrocket节点/Trojan节点订阅节点地址">2025年最好的VPN | 5月19日22.9M/S|免费Clash节点/SSR节点/Singbox节点/V2ray节点/Shadowrocket节点/Trojan节点订阅节点地址</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-5-14-vpn-free.htm" title="2025年最好的VPN | 5月14日21.2M/S|免费Trojan节点/Shadowrocket节点/Singbox节点/Clash节点/V2ray节点/SSR节点订阅节点地址">2025年最好的VPN | 5月14日21.2M/S|免费Trojan节点/Shadowrocket节点/Singbox节点/Clash节点/V2ray节点/SSR节点订阅节点地址</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-5-10-node-share.htm" title="2025年最好的VPN | 5月10日19.5M/S|免费Shadowrocket节点/SSR节点/Singbox节点/Trojan节点/Clash节点/V2ray节点订阅节点地址">2025年最好的VPN | 5月10日19.5M/S|免费Shadowrocket节点/SSR节点/Singbox节点/Trojan节点/Clash节点/V2ray节点订阅节点地址</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-6-2-node-share-links.htm" title="2025年最好的VPN | 6月2日18.1M/S|免费Trojan节点/V2ray节点/Shadowrocket节点/Singbox节点/SSR节点/Clash节点订阅节点地址">2025年最好的VPN | 6月2日18.1M/S|免费Trojan节点/V2ray节点/Shadowrocket节点/Singbox节点/SSR节点/Clash节点订阅节点地址</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-5-31-vpn-github.htm" title="2025年最好的VPN | 5月31日19.1M/S|免费Clash节点/Trojan节点/V2ray节点/Singbox节点/Shadowrocket节点/SSR节点订阅节点地址">2025年最好的VPN | 5月31日19.1M/S|免费Clash节点/Trojan节点/V2ray节点/Singbox节点/Shadowrocket节点/SSR节点订阅节点地址</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-7-vpn-github.htm" title="2025年最好的VPN | 5月7日18M/S|免费Trojan节点/V2ray节点/Singbox节点/SSR节点/Clash节点/Shadowrocket节点订阅节点地址">2025年最好的VPN | 5月7日18M/S|免费Trojan节点/V2ray节点/Singbox节点/SSR节点/Clash节点/Shadowrocket节点订阅节点地址</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-29-free-node-subscribe.htm" title="2025年最好的VPN | 5月29日18.7M/S|免费Singbox节点/Trojan节点/V2ray节点/Shadowrocket节点/SSR节点/Clash节点订阅节点地址">2025年最好的VPN | 5月29日18.7M/S|免费Singbox节点/Trojan节点/V2ray节点/Shadowrocket节点/SSR节点/Clash节点订阅节点地址</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-23-mianfei-vpn.htm" title="2025年最好的VPN | 5月23日20.3M/S|免费SSR节点/Singbox节点/Trojan节点/Clash节点/V2ray节点/Shadowrocket节点订阅节点地址">2025年最好的VPN | 5月23日20.3M/S|免费SSR节点/Singbox节点/Trojan节点/Clash节点/V2ray节点/Shadowrocket节点订阅节点地址</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-6-6-top-vpn.htm" title="2025年最好的VPN | 6月6日19.9M/S|免费Clash节点/V2ray节点/Singbox节点/SSR节点/Shadowrocket节点/Trojan节点订阅节点地址">2025年最好的VPN | 6月6日19.9M/S|免费Clash节点/V2ray节点/Singbox节点/SSR节点/Shadowrocket节点/Trojan节点订阅节点地址</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-21-vpn-free.htm" title="2025年最好的VPN | 5月21日18.7M/S|免费Singbox节点/V2ray节点/Clash节点/SSR节点/Shadowrocket节点/Trojan节点订阅节点地址">2025年最好的VPN | 5月21日18.7M/S|免费Singbox节点/V2ray节点/Clash节点/SSR节点/Shadowrocket节点/Trojan节点订阅节点地址</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-6-9-node-share-links.htm" title="2025年最好的VPN | 6月9日21.4M/S|免费V2ray节点/SSR节点/Shadowrocket节点/Clash节点/Singbox节点/Trojan节点订阅节点地址">2025年最好的VPN | 6月9日21.4M/S|免费V2ray节点/SSR节点/Shadowrocket节点/Clash节点/Singbox节点/Trojan节点订阅节点地址</a><hr /></li>
                     </ul>
     </div>
 </div>
@@ -473,7 +473,7 @@ ntpdate -u ntp.aliyun.com &gt;&gt; /var/log/ntp.log 2&gt;&amp;1
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">6</span> <a href="/date/2026-06/" title="2026-06 归档">2026-06</a></h4>
+                <h4><span class="badge" style="float: right;">13</span> <a href="/date/2026-06/" title="2026-06 归档">2026-06</a></h4>
             </li>
                         <li class="py-2">
                 <h4><span class="badge" style="float: right;">29</span> <a href="/date/2026-05/" title="2026-05 归档">2026-05</a></h4>
